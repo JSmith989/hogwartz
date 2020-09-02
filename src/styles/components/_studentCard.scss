@@ -1,0 +1,8 @@
+  @each $house, $card in $house-list {
+    .student-#{$house} {
+      @include card($house, $card);
+      h2 {
+        @include text(lg, $white)
+    }
+    }
+  }
